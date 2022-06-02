@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class 6</title>
+    <link rel="shortcut icon" href="./logos/favicon_bota_fora.svg" type="img" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --very-light-pink: #c7c7c7;
+        --text-input-field: #f7f7f7;
+        --hospital-green: #acd9b2;
+        --white: #ffffff;
+        --black: #000000;
+        --sm: 14px;
+        --md: 16px;
+        --lg: 18px;
+        --card-width: 240px;
+      }
+      body {
+        margin: 0;
+        font-family: 'Quicksand', sans-serif;
+      }
+      .cards-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, var(--card-width));
+        gap: 24px;
+        place-content: center;
+      }
+      .product-card img {
+        width: var(--card-width);
+        height: var(--card-width);
+        object-fit: cover;
+        border-radius: 20px;
+      }
+      .product-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .product-info figure {
+        margin: 0;
+      }
+      .product-info figure img {
+        width: 35px;
+        height: 35px;
+        margin-top: 12px;
+      }
+      .product-info div p:nth-child(1) {
+        font-weight: bold;
+        font-size: var(--md);
+        margin-bottom: 4px;
+      }
+      .product-info div p:nth-child(2) {
+        font-size: var(--sm);
+        margin: 0;
+        color: var(--very-light-pink);
+      }
+      @media (max-width: 640px) {
+        .cards-container {
+          --card-width: 140px;
+          padding: 0 8px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="cards-container">
+        <div class="product-card">
+          <img
+            src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+            alt=""
+          />
+          <div class="product-info">
+            <div>
+              <p>$120,00</p>
+              <p>Bike</p>
+            </div>
+            <figure>
+              <img src="./icons/bt_add_to_cart.svg" alt="icon" />
+            </figure>
+          </div>
+        </div>
+        <div class="product-card">
+          <img
+            src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+            alt=""
+          />
+          <div class="product-info">
+            <div>
+              <p>$120,00</p>
+              <p>Bike</p>
+            </div>
+            <figure>
+              <img src="./icons/bt_add_to_cart.svg" alt="icon" />
+            </figure>
+          </div>
+        </div>
+        <div class="product-card">
+          <img
+            src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+            alt=""
+          />
+          <div class="product-info">
+            <div>
+              <p>$120,00</p>
+              <p>Bike</p>
+            </div>
+            <figure>
+              <img src="./icons/bt_add_to_cart.svg" alt="icon" />
+            </figure>
+          </div>
+        </div>
+        <div class="product-card">
+          <img
+            src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+            alt=""
+          />
+          <div class="product-info">
+            <div>
+              <p>$120,00</p>
+              <p>Bike</p>
+            </div>
+            <figure>
+              <img src="./icons/bt_add_to_cart.svg" alt="icon" />
+            </figure>
+          </div>
+        </div>
+        <div class="product-card">
+          <img
+            src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+            alt=""
+          />
+          <div class="product-info">
+            <div>
+              <p>$120,00</p>
+              <p>Bike</p>
+            </div>
+            <figure>
+              <img src="./icons/bt_add_to_cart.svg" alt="icon" />
+            </figure>
+          </div>
+        </div>
+        <div class="product-card">
+          <img
+            src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+            alt=""
+          />
+          <div class="product-info">
+            <div>
+              <p>$120,00</p>
+              <p>Bike</p>
+            </div>
+            <figure>
+              <img src="./icons/bt_add_to_cart.svg" alt="icon" />
+            </figure>
+          </div>
+        </div>
+        <div class="product-card">
+          <img
+            src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+            alt=""
+          />
+          <div class="product-info">
+            <div>
+              <p>$120,00</p>
+              <p>Bike</p>
+            </div>
+            <figure>
+              <img src="./icons/bt_add_to_cart.svg" alt="icon" />
+            </figure>
+          </div>
+        </div>
+        <div class="product-card">
+          <img
+            src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+            alt=""
+          />
+          <div class="product-info">
+            <div>
+              <p>$120,00</p>
+              <p>Bike</p>
+            </div>
+            <figure>
+              <img src="./icons/bt_add_to_cart.svg" alt="icon" />
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

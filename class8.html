@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class 7</title>
+    <link rel="shortcut icon" href="./logos/favicon_bota_fora.svg" type="img" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --very-light-pink: #c7c7c7;
+        --text-input-field: #f7f7f7;
+        --hospital-green: #acd9b2;
+        --white: #ffffff;
+        --black: #000000;
+        --sm: 14px;
+        --md: 16px;
+        --lg: 18px;
+        --card-width: 240px;
+      }
+      body {
+        margin: 0;
+        font-family: 'Quicksand', sans-serif;
+      }
+      .mobile-menu {
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+      }
+      .mobile-menu ul {
+        list-style: none;
+        margin: 0 0 0 0;
+        padding: 0;
+      }
+      .mobile-menu ul:last-child {
+        position: absolute;
+        bottom: 12px;
+      }
+      .mobile-menu ul li {
+        margin-bottom: 24px;
+      }
+      .mobile-menu ul li a {
+        text-decoration: none;
+        color: var(--black);
+        font-weight: 700;
+      }
+      .mobile-menu ul .title a {
+        text-transform: uppercase;
+      }
+      .mobile-menu ul .email a {
+        font-weight: var(--sm);
+        font-weight: 300;
+      }
+      .mobile-menu ul .email a {
+        font-weight: var(--sm);
+        font-weight: 300;
+      }
+      .mobile-menu ul .sign-out a {
+        font-weight: var(--sm);
+        color: var(--hospital-green);
+      }
+      .mobile-menu .divider {
+        height: 1px;
+        background-color: var(--very-light-pink);
+        margin-bottom: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mobile-menu">
+      <ul>
+        <li class="title">
+          <a href="#">Categories</a>
+        </li>
+        <li>
+          <a href="#">All</a>
+        </li>
+        <li>
+          <a href="#">Clothes</a>
+        </li>
+        <li>
+          <a href="#">Electronics</a>
+        </li>
+        <li>
+          <a href="#">Furnitures</a>
+        </li>
+        <li>
+          <a href="#">Toys</a>
+        </li>
+        <li>
+          <a href="#">Others</a>
+        </li>
+      </ul>
+      <div class="divider"></div>
+      <ul>
+        <li>
+          <a href="#">My orders</a>
+        </li>
+        <li>
+          <a href="#">My account</a>
+        </li>
+      </ul>
+      <ul>
+        <li class="email">
+          <a href="#">platzi@example.com</a>
+        </li>
+        <li class="sign-out">
+          <a href="#">Sign out</a>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
