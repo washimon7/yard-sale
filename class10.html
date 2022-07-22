@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class 10</title>
+    <link rel="shortcut icon" href="./logos/favicon_bota_fora.svg" type="img" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --very-light-pink: #c7c7c7;
+        --text-input-field: #f7f7f7;
+        --hospital-green: #acd9b2;
+        --white: #ffffff;
+        --black: #000000;
+        --sm: 14px;
+        --md: 16px;
+        --lg: 18px;
+        --card-width: 240px;
+      }
+      body {
+        margin: 0;
+        font-family: 'Quicksand', sans-serif;
+      }
+      .my-orders-wrapper {
+        min-height: 100vh;
+        width: 100%;
+        display: grid;
+        place-items: center;
+      }
+      .my-orders-container {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        padding: 16px 0;
+      }
+      .title {
+        font-size: var(--lg);
+        margin-bottom: 40px;
+        padding: 0 16px;
+      }
+      @media (max-width: 640px) {
+        .title {
+          display: none;
+        }
+      }
+      .order-item {
+        display: grid;
+        grid-template-columns: 1fr auto auto;
+        align-items: center;
+        column-gap: 16px;
+        padding: 8px 16px;
+        margin-bottom: 12px;
+      }
+      .order-info {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .order-date {
+        font-weight: 700;
+        margin-bottom: 4px;
+      }
+      .order-count {
+        font-size: var(--sm);
+        color: var(--very-light-pink);
+      }
+      .order-amount {
+        font-weight: 700;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="my-orders-wrapper">
+      <div class="my-orders-container">
+        <h1 class="title">My order</h1>
+        <div class="order-item">
+          <div class="order-info">
+            <span class="order-date">04.25.2021</span>
+            <span class="order-count">6 articles</span>
+          </div>
+          <span class="order-amount">$ 560.00</span>
+          <img class="order-icon" src="./icons/flechita.svg" alt="arrow" />
+        </div>
+        <div class="order-item">
+          <div class="order-info">
+            <span class="order-date">04.25.2021</span>
+            <span class="order-count">6 articles</span>
+          </div>
+          <span class="order-amount">$ 560.00</span>
+          <img class="order-icon" src="./icons/flechita.svg" alt="arrow" />
+        </div>
+        <div class="order-item">
+          <div class="order-info">
+            <span class="order-date">04.25.2021</span>
+            <span class="order-count">6 articles</span>
+          </div>
+          <span class="order-amount">$ 560.00</span>
+          <img class="order-icon" src="./icons/flechita.svg" alt="arrow" />
+        </div>
+        <div class="order-item">
+          <div class="order-info">
+            <span class="order-date">04.25.2021</span>
+            <span class="order-count">6 articles</span>
+          </div>
+          <span class="order-amount">$ 560.00</span>
+          <img class="order-icon" src="./icons/flechita.svg" alt="arrow" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

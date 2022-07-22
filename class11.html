@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class 11</title>
+    <link rel="shortcut icon" href="./logos/favicon_bota_fora.svg" type="img" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --very-light-pink: #c7c7c7;
+        --text-input-field: #f7f7f7;
+        --hospital-green: #acd9b2;
+        --white: #ffffff;
+        --black: #000000;
+        --sm: 14px;
+        --md: 16px;
+        --lg: 18px;
+        --card-width: 240px;
+      }
+      body {
+        margin: 0;
+        font-family: 'Quicksand', sans-serif;
+      }
+      .logo {
+        width: 150px;
+      }
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding: 8px 16px;
+        border-bottom: 1px solid var(--very-light-pink);
+      }
+      @media (max-width: 875px) {
+        .navbar {
+          column-gap: 16px;
+        }
+      }
+      .navbar-menu-icon {
+        display: none;
+      }
+      @media (max-width: 875px) {
+        .navbar-menu-icon {
+          display: inline;
+        }
+      }
+      .left-navbar {
+        display: flex;
+      }
+      .left-navbar ul {
+        padding: 0;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        margin: 0;
+        column-gap: 4px;
+        margin-left: 44px;
+      }
+      .menu-option {
+        padding: 4px 12px;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+      .menu-option a {
+        text-decoration: none;
+        color: var(--very-light-pink);
+        font-size: var(--sm);
+      }
+      .selected-option {
+        border: 1px solid var(--hospital-green);
+      }
+      .selected-option a {
+        color: var(--hospital-green);
+      }
+      .right-navbar ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        column-gap: 12px;
+      }
+      @media (max-width: 875px) {
+        .left-navbar ul {
+          display: none;
+        }
+      }
+      .navbar-cart-icon {
+        position: relative;
+        border-radius: 50%;
+        padding: 6px 8px;
+      }
+      .navbar-cart-icon img {
+        width: 24px;
+        height: 24px;
+        object-fit: cover;
+      }
+      .navbar-email span {
+        font-size: var(--sm);
+        color: gray;
+        font-weight: 500;
+      }
+      @media (max-width: 875px) {
+        .navbar-email {
+          display: none;
+        }
+      }
+      .navbar-cart-items-count {
+        position: absolute;
+        top: 4px;
+        right: 4px;
+        background-color: var(--hospital-green);
+        color: var(--black);
+        font-size: 10px;
+        font-weight: 700;
+        padding: 0 4px;
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <img class="navbar-menu-icon" src="./icons/icon_menu.svg" alt="menu" />
+      <div class="left-navbar">
+        <img class="logo" src="./logos/logo_yard_sale.svg" alt="logo" />
+        <ul>
+          <li class="menu-option selected-option">
+            <a href="#">All</a>
+          </li>
+          <li class="menu-option">
+            <a href="#">Clothes</a>
+          </li>
+          <li class="menu-option">
+            <a href="#">Electronics</a>
+          </li>
+          <li class="menu-option">
+            <a href="#">Furnitures</a>
+          </li>
+          <li class="menu-option">
+            <a href="#">Toys</a>
+          </li>
+          <li class="menu-option">
+            <a href="#">Others</a>
+          </li>
+        </ul>
+      </div>
+      <div class="right-navbar">
+        <ul>
+          <li class="navbar-email">
+            <span>platzi@example.com</span>
+          </li>
+          <li class="navbar-cart-icon">
+            <img src="./icons/icon_shopping_cart.svg" alt="shopping cart" />
+            <div class="navbar-cart-items-count">2</div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </body>
+</html>
